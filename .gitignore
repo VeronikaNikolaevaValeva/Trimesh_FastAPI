@@ -1,0 +1,47 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local development env files
+.env
+
+# Project dependencies (use `pip freeze > requirements.txt` to generate)
+venv/
+env/
+lib/
+bin/
+include/
+*.egg-info/
+*.egg
+
+# IDE / editor specific files
+.vscode/
+.idea/
+*.iml
+
+# Project logs
+logs/
+*.log
+
+# Compiled files
+*.pyc
+*.pyo
+*.pyd
+
+# Cache files
+*.cache
+*.swp
+*.bak
+*.tmp
+
+# Unit test / coverage reports
+htmlcov/
+.coverage
+.tox/
+nosetests.xml
+*.cover
+
+# Database
+*.db
+*.sqlite3

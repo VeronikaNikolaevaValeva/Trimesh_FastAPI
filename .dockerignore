@@ -1,0 +1,6 @@
+# Files ignored when building docker images:
+.venv
+venv
+env
+.dockerignore
+Dockerfile

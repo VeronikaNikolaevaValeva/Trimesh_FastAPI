@@ -1,0 +1,6 @@
+trimesh
+scipy
+rtree
+fastapi
+numpy
+networkx

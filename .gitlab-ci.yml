@@ -1,0 +1,33 @@
+image: docker:latest
+
+services:
+  - docker:dind
+  
+stages:
+  - build
+  - test
+  - deploy 
+
+build:
+  stage: build
+  image: docker:latest
+  services:
+    - docker:dind
+  script:
+    - docker build -t sole-file-validation-service .
+    
+test:
+  stage: test
+  before_script:
+    - pip install -r requirements.txt
+  script:
+    - echo 'to be added pytest app/test.py'
+
+deploy:
+  stage: deploy
+  image: docker:latest
+  services:
+    - docker:dind
+  script:
+    - docker-compose up -d
+
